@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7db495e9-515c-46b2-b0d3-38d164fa88fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/helloworld2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helloworld2.java" afterDir="false" />
-    </list>
+    <list default="true" id="7db495e9-515c-46b2-b0d3-38d164fa88fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -128,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/helloworld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#69#70#0" expanded="true" />
                 <element signature="e#118#119#0" expanded="true" />
@@ -139,6 +136,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/haha.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/helloworld2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -173,8 +179,8 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/helloworld.java" />
         <option value="$PROJECT_DIR$/src/main/java/helloworld2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/helloworld.java" />
       </list>
     </option>
   </component>
@@ -223,10 +229,7 @@
             </path>
             <path>
               <item name="testProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testProj" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -331,7 +334,7 @@
       <updated>1569328878283</updated>
       <workItem from="1569328882533" duration="4296000" />
       <workItem from="1569389615347" duration="4293000" />
-      <workItem from="1569398388568" duration="2274000" />
+      <workItem from="1569398388568" duration="2855000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1569397520584</created>
@@ -361,14 +364,29 @@
       <option name="project" value="LOCAL" />
       <updated>1569400305521</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改helloworld2">
+      <created>1569400720496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569400720496</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改helloworld1">
+      <created>1569400828836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569400828836</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10863000" />
+    <option name="totallyTimeSpent" value="11444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1028" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -413,7 +431,9 @@
     <MESSAGE value="commit 2" />
     <MESSAGE value="commit 1" />
     <MESSAGE value="添加helloworld2" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加helloworld2" />
+    <MESSAGE value="修改helloworld2" />
+    <MESSAGE value="修改helloworld1" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改helloworld1" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -434,17 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helloworld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
-          <folding>
-            <element signature="e#69#70#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/helloworld3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -460,6 +469,24 @@
             <element signature="e#70#71#0" expanded="true" />
             <element signature="e#119#120#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helloworld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#69#70#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/haha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
