@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="sougoAppSpider" class="SougoAppSpider">
+
+    </bean>
+    <bean id="consolepipeline" class="us.codecraft.webmagic.pipeline.ConsolePipeline">
+
+    </bean>
+    <bean id="mysqlpipeline" class="MysqlPipeline">
+
+    </bean>
+
+    <bean id="spiderStart" class="SpiderStart">
+        <constructor-arg ref="sougoAppSpider">
+        </constructor-arg>
+        <constructor-arg ref="mysqlpipeline">
+        </constructor-arg>
+    </bean>
+
+    <bean id="appService" class="AppService">
+
+    </bean>
+
+<!--    &lt;!&ndash; 加载配置文件 &ndash;&gt;-->
+<!--    <bean id="propertyConfigurer"-->
+<!--          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+<!--        <property name="location">-->
+<!--            <value>jdbc.properties</value>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash; 数据源，使用dbcp &ndash;&gt;-->
+<!--    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">-->
+<!--        <property name="driverClassName" value="${jdbc.driverClassName}" />&lt;!&ndash; 这里的name不能直接使用driver，必须是driverClassName &ndash;&gt;-->
+<!--        <property name="url" value="${jdbc.url}" />-->
+<!--        <property name="username" value="${jdbc.username}" />-->
+<!--        <property name="password" value="${jdbc.password}" />-->
+<!--    </bean>-->
+
+
+    <!-- 配置数据源 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/apps?useUnicode=true&amp;characterEncoding=utf-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="zl123456"/>
+    </bean>
+
+<!--    &lt;!&ndash; 扫描持久层接口 &ndash;&gt;-->
+<!--    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+<!--        &lt;!&ndash; 配置接口文件所在的包 &ndash;&gt;-->
+<!--        <property name="basePackage" value="cn.tedu.mybatis.mapper"></property>-->
+<!--    </bean>-->
+
+    <!-- sqlSessionFactory -->
+    <bean id = "sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 加载mybatis的配置文件 -->
+        <property name="configLocation" value="mybatis-config.xml"></property>
+        <!-- 数据源 -->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- mapper配置，MapperFactoryBean可以根据mapper接口来生成代理对象 -->
+    <bean id="appMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="AppMapper"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+
+
+</beans>
